@@ -12,8 +12,9 @@ public class Q8_advanced {
 		 */
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Give row number");
+		System.out.println("Give rows and columns");
 		int rows = sc.nextInt();
+		int column = sc.nextInt();
 		
 		for(int i =1;i<=rows;i++) {
 			// for spaces
@@ -22,7 +23,7 @@ public class Q8_advanced {
 			}
 			
 			// for stars
-			for(int j=1;j<=5;j++) {
+			for(int j=1;j<=column;j++) {
 				System.out.print("*");	
 			}
 			System.out.println();
@@ -49,9 +50,9 @@ public class Q8_advanced {
 			}
 			
 			// for stars
-			for(int j=1;j<=5;j++) {
+			for(int j=1;j<=column;j++) {
 				// for empty part 
-				if(i==1||j==1||i==rows||j==rows) {
+				if(i==1||j==1||i==rows||j==column) {
 					System.out.print("*");
 				}
 				else {System.out.print(" ");}
